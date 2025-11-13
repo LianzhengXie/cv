@@ -1,0 +1,121 @@
+\documentclass[a4paper,12pt]{article}
+
+% ---------- Packages ----------
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{fontspec}
+\setmainfont{SimSun}
+\usepackage{xeCJK}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{array}
+
+% ---------- Section Formatting ----------
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}[\titlerule]
+\setlength{\parskip}{6pt}
+
+% ---------- Document ----------
+\begin{document}
+
+% ---------- Header ----------
+\begin{minipage}[t]{0.7\textwidth}
+    {\Huge \textbf{谢连铮（Frankie Xie）}}\\[6pt]
+    软件开发 · 前端 · 后端 · 技术支持\\[6pt]
+    \textbf{邮箱：}2877616266@qq.com\\
+    \textbf{地点：}墨尔本，澳大利亚\\
+    \textbf{GitHub：}\href{}{ }\\
+    \textbf{LinkedIn：}\href{}{ }\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+\includegraphics[width=\textwidth]{profile.jpg}
+\end{minipage}
+
+\vspace{10pt}
+
+% ---------- Profile ----------
+\section*{个人简介}
+具有扎实的软件开发、前端与后端工程、数据处理、云计算及技术支持能力的莫纳什大学 IT 硕士。熟悉完整的系统开发流程，从需求分析、架构设计到全栈实现与部署均有实战经验。项目经历涵盖 Web、移动端、后端 API、云架构与健康科技系统。
+
+面对问题善于定位、调试、沟通与跨团队协作，能快速适应技术栈变化，适合前端、后端、全栈或技术支持类岗位。
+
+% ---------- Skills ----------
+\section*{核心技能}
+\textbf{编程语言：}Python、Java、Kotlin、JavaScript、TypeScript、SQL、C++、C、MATLAB \\
+\textbf{前端：}React、Vue 3、HTML/CSS、Axios、Tailwind \\
+\textbf{后端：}Node.js、Express、REST API、PostgreSQL、MySQL、Firebase \\
+\textbf{移动开发：}Android Studio、Jetpack Compose、Material 3、Room 数据库 \\
+\textbf{云与部署：}AWS（Lambda、API Gateway、Cognito、S3）、Docker、Kubernetes、Firebase Functions \\
+\textbf{AI 与数据：}PyTorch、Pandas、NLTK、Scikit-learn、数据清洗、数据仓库建模 \\
+\textbf{工具：}Git、GitHub Actions、Postman、DBeaver、LaTeX、Figma
+
+% ---------- Projects ----------
+\section*{项目经历}
+
+\textbf{健康管理提醒系统 | React + Node.js + PostgreSQL + Twilio}  
+\textit{2024–2025}  
+\begin{itemize}[leftmargin=*]
+    \item 负责系统架构、算法设计与前后端开发，是真实研究项目的一部分。
+    \item 设计多关键词智能匹配算法，将“处方 → 主题 → 消息库”自动关联。
+    \item 使用 Twilio 实现 WhatsApp/SMS 自动发送、去重、防刷、可配置频率。
+    \item 构建 Docker 化 PostgreSQL 数据库与 REST API。
+\end{itemize}
+
+\textbf{EcoFit 可持续时尚 App | Android Jetpack Compose + Firebase + Room}  
+\textit{2024}  
+\begin{itemize}[leftmargin=*]
+    \item 设计并实现 7 个核心页面：登录注册、衣橱管理、统计图表、用户档案等。
+    \item 使用 Firebase Auth + Room 数据库实现按用户 UID 分库存储。
+    \item 使用 MPAndroidChart 完成可交互柱状图展示月度重复穿搭情况。
+\end{itemize}
+
+\textbf{BirdTag 云端自动图像识别 | AWS Lambda + S3 + DynamoDB + Cognito}  
+\textit{2025}  
+\begin{itemize}[leftmargin=*]
+    \item 设计“上传 → 触发 → 处理 → 存储”的无服务器架构。
+    \item 使用 Lambda 完成自动标签识别（模型对接部分可扩展）。
+\end{itemize}
+
+\textbf{DQN 强化学习网格世界 | PyTorch}  
+\textit{2024}  
+\begin{itemize}[leftmargin=*]
+    \item 自建 4×4 网格环境，包含拾取物品与目标导航机制。
+    \item 实现 DQN（经验回放、epsilon 衰减、target network 复制）。
+\end{itemize}
+
+\textbf{MStay 数据仓库 | 星型模型 + SQL ETL}  
+\textit{2024}  
+\begin{itemize}[leftmargin=*]
+    \item 设计 Listing、Booking、Review 的星型模型架构。
+    \item 构建事实表、维度表与多表 ETL 流程。
+\end{itemize}
+
+% ---------- Research ----------
+\section*{科研经历}
+
+\textbf{暑期科研：X-Ray 谱线分析 | Python 科学计算}  
+\textit{Monash University · 2024–2025}  
+\begin{itemize}[leftmargin=*]
+    \item 使用 SciPy 对 NEXAFS 光谱进行 Gaussian 拟合与阶梯函数建模。
+    \item 编写可复用的光谱分析工具（Matplotlib + 数值方法）。
+\end{itemize}
+
+% ---------- Education ----------
+\section*{教育背景}
+
+\textbf{莫纳什大学 Monash University}  
+信息技术硕士（Master of Information Technology）  
+\textit{2023–2025（在读）}
+
+\textbf{WES 成绩认证已完成}  
+等同于澳大利亚 AQF Level 9 / 美国本科学位（荣誉）
+
+% ---------- Availability ----------
+\section*{求职方向与可用时间}
+前端 / 后端 / 全栈开发 / 技术支持岗位均可。  
+可立即入岗，可接受全职、实习或兼职。
+
+\end{document}
