@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lianzheng Xie - English Resume (AltaCV)
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=1cm,columnsep=0.75cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BodyColor}{HTML}{555555}
+\definecolor{EmphasisColor}{HTML}{222222}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+\renewcommand{\namefont}{\Huge\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\LARGE\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\begin{document}
+
+%=====================
+% HEADER
+%=====================
+\name{Lianzheng Xie (Frankie)}
+\tagline{Software Developer • Frontend/Backend • Technical Support}
+
+\personalinfo{
+  \email{2877616266@qq.com}
+  \location{Melbourne, Australia}
+  \github{}
+  \linkedin{}
+}
+
+\makecvheader
+
+%=====================
+\columnratio{0.25}
+\begin{paracol}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LEFT COLUMN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Technical Skills}
+\begin{sloppypar*}
+\cvtags{
+Python/true, Java/true, JavaScript/true, TypeScript, Kotlin/true, SQL/true,
+C++, C, HTML, CSS, Bash, MATLAB
+}
+\medskip
+\cvtags{
+React, Vue3, Node.js/true, Express, Android Jetpack Compose/true, Material3,
+Firebase/true, PostgreSQL/true, MySQL, Docker/true, Kubernetes,
+AWS Lambda, API Gateway, Cognito, Twilio API
+}
+\medskip
+\cvtags{
+Git/true, GitHub Actions, REST API Design, PyTorch, Pandas, NLTK,
+Room Database, LaTeX/true
+}
+\end{sloppypar*}
+
+\cvsection{Languages}
+\cvlang{Chinese}{Native}\\
+\divider
+\cvlang{English}{Professional}
+
+\cvsection{Strengths}
+\cvtags{Problem Solving/true, Fast Learner/true, Team Collaboration, Communication, Debugging/true}
+
+\newpage
+\switchcolumn
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RIGHT COLUMN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{About Me}
+\begin{quote}
+Master of IT student at Monash University with strong experience in frontend and backend development, cloud systems, data engineering, and mobile development. Passionate about building reliable products and solving technical problems. Open to software engineering, full-stack, and technical support roles.
+\end{quote}
+
+%=====================
+\cvsection{Education}
+\cvevent{Master of Information Technology}{Monash University}{2023 -- 2025}{Melbourne, Australia}
+\begin{itemize}
+  \item Coursework: Deep Learning, AI Fundamentals, Full-stack Web Development, Cloud Computing, Android Development, Advanced Databases, Data Wrangling.
+\end{itemize}
+\divider
+
+\cvevent{WES Credential Evaluation}{Completed}{--}{}
+\begin{itemize}
+  \item Equivalent to Australian AQF Level 9 / U.S. Bachelor (Honours).
+\end{itemize}
+
+%=====================
+\cvsection{Projects}
+
+\cvevent{Lifestyle Medicine: Personalized Health Reminder System}{React • Node.js • PostgreSQL • Twilio}{2024 -- 2025}{}
+\begin{itemize}
+  \item Developed a full-stack digital health reminder system used in a real research project.
+  \item Implemented intelligent message-matching algorithm (keywords → themes → message bank).
+  \item Built WhatsApp/SMS automation with Twilio, including duplicate prevention and custom schedules.
+  \item Designed React frontend and REST API backend with Dockerized PostgreSQL.
+\end{itemize}
+\divider
+
+\cvevent{EcoFit: Sustainable Fashion App}{Android Jetpack Compose • Firebase • Room}{2024}{}
+\begin{itemize}
+  \item Built a 7-screen Android app with Firebase Auth + Room DB (per-UID storage).
+  \item Designed Material3 UI, monthly wear analytics, achievements, and wardrobe management.
+  \item Implemented bar chart visualization using MPAndroidChart.
+\end{itemize}
+\divider
+
+\cvevent{BirdTag Cloud Pipeline}{AWS Lambda • S3 • DynamoDB • Cognito}{2025}{}
+\begin{itemize}
+  \item Designed cloud architecture for automated bird image tagging.
+  \item Implemented serverless workflow: S3 → Lambda → DynamoDB.
+  \item Integrated Cognito authentication and API Gateway.
+\end{itemize}
+\divider
+
+\cvevent{DQN GridWorld Reinforcement Learning}{PyTorch}{2024}{}
+\begin{itemize}
+  \item Built a 4x4 custom environment with item-pickup + goal navigation.
+  \item Implemented DQN with replay buffer, epsilon decay, and target network sync.
+\end{itemize}
+\divider
+
+\cvevent{MStay Data Warehouse}{SQL • Star Schema • ETL}{2024}{}
+\begin{itemize}
+  \item Designed dimensional model with fact and dimension tables.
+  \item Performed ETL and built analytical queries.
+\end{itemize}
+
+%=====================
+\cvsection{Research Experience}
+\cvevent{Summer Research Program: X-Ray Scientific Computing}{Python • SciPy • Matplotlib}{2024 -- 2025}{Monash University}
+\begin{itemize}
+  \item Analysed NEXAFS X-ray data using Gaussian fitting and step-function modelling.
+  \item Built reusable scientific computing tools for spectral analysis.
+\end{itemize}
+
+%=====================
+\cvsection{Availability}
+\begin{itemize}
+\item Available immediately for internship or part-time roles.
+\item Open to frontend, backend, full-stack, or technical support.
+\end{itemize}
+
+\end{paracol}
+\end{document}
